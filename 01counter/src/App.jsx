@@ -8,9 +8,16 @@ function App() {
   let[counter, setCounter] = useState(15)
 
   const addValue = () =>{
-    console.log("clicked" , Math.random());
-    counter = counter+1
-    setCounter(counter);
+    // console.log("clicked" , Math.random());
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);  // is case me bunch me cheeze jaati hai so increment 1 hi baar hoga
+
+      setCounter(prevCounter => prevCounter +1);
+      setCounter(prevCounter => prevCounter +1);
+      setCounter(prevCounter => prevCounter +1);
+      setCounter(prevCounter => prevCounter +1);  // is case me hum prevCounetr le rhe hian so value directly update hoke 15 se 19 ho jayegi
   }
 
   const removeValue = () =>{
